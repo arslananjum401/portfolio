@@ -36,10 +36,15 @@ header {
     top: 0.0000001px;
 }
 
+strong {
+    font-family: SBold;
+    font-size: 18px;
+}
 
-header>*{
+header>* {
     margin: 10px;
 }
+
 .HomeBtn {
     position: relative;
     width: 50%;
@@ -120,7 +125,7 @@ header>*{
     /* border: 1px solid red; */
     position: relative;
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     flex-direction: column;
 }
 
@@ -293,93 +298,111 @@ header>*{
 }
 
 @media (max-width:1000px) {
-   
-  
+
+
     .Intro>* {
         margin: 25px;
     }
-    
-    .Intro h3{
+
+    .Intro h3 {
         overflow-wrap: break-word;
         font-size: 18px;
     }
+
     .NavBtns li {
         margin: 0px 20px;
     }
 }
 
 @media (max-width:600px) {
-    .Home{
+    .Home {
         flex-direction: column;
         /* height: auto; */
     }
-    .Home>*{
+
+    .Home>* {
         width: 100%;
         height: 50vh;
     }
 }
+
 @media (max-width:400px) {
     .NavBtns li {
         margin: 0px 10px;
     }
-    .Home{
+
+    .Home {
         flex-direction: column;
         height: auto;
     }
-    .Intro h3{
+
+    .Intro h3 {
         overflow-wrap: break-word;
         font-size: 15px;
     }
-    .Intro>*{
+
+    .Intro>* {
         margin: 15px;
     }
-    .Home>*{
+
+    .Home>* {
         width: 100%;
         height: 50vh;
     }
 }
+
 @media (max-width:600px) {
-    .Home{
+    .Home {
         flex-direction: column;
         /* height: auto; */
     }
-    .Home>*{
+
+    .Home>* {
         width: 100%;
         height: 50vh;
     }
 }
+
 @media (max-width:275px) {
- 
-    .NavBtns{
+
+    .NavBtns {
         justify-content: space-around;
     }
-    .NavBtns li a{
+
+    .NavBtns li a {
         font-size: 15px;
     }
+
     .NavBtns li {
         margin: 0px 5px;
     }
 
 }
+
 @media (max-width:200px) {
-    .My_Image{
+    .My_Image {
         height: 40vh;
     }
-    .Home{
+
+    .Home {
         height: auto;
     }
-    .NavBtns{
+
+    .NavBtns {
         flex-direction: column;
     }
-    .Intro{
-        height:min-content;
+
+    .Intro {
+        height: min-content;
     }
-    .Intro>*{
-       word-spacing: 0px;
-       word-break: break-all;
+
+    .Intro>* {
+        word-spacing: 0px;
+        word-break: break-all;
     }
+
     /* .IntroContainer{
         height: max-content;
     } */
-   
+
 }
