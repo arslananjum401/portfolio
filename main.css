@@ -1,0 +1,385 @@
+@font-face {
+    font-family: Regular;
+    src: url("Segoe UI/segoeui.ttf");
+}
+
+@font-face {
+    font-family: SBold;
+    src: url("Segoe UI/segoeuib.ttf");
+}
+
+@font-face {
+    font-family: SemiBold;
+    src: url("Segoe UI/seguisb.ttf");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: #f8f8f8;
+}
+
+header {
+    /* height: 5vh; */
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e28a67;
+
+    position: sticky;
+    z-index: 2;
+    top: 0.0000001px;
+}
+
+
+header>*{
+    margin: 10px;
+}
+.HomeBtn {
+    position: relative;
+    width: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeBtn h2 {
+    font-family: Regular;
+}
+
+.HomeBtnClr {
+    color: #702a0e;
+}
+
+.HomeBtn :hover {
+
+    transition: 0.3s;
+    transform: scale(1.03);
+}
+
+.NavBtns {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.NavBtns li {
+    margin: 0px 40px;
+}
+
+.NavBtns li a {
+
+    text-decoration: none;
+    color: Black;
+    font-size: 18px;
+    font-family: Regular;
+}
+
+.NavBtns li:hover>a {
+    transition: 0.3s;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+
+.Home {
+    width: 100%;
+    height: 70vh;
+    /* min-height: 800px; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.My_Image {
+    width: 50%;
+    background-image: url("https://th.bing.com/th/id/OIP.RBeXsiliJ3p1HWrEL24skQHaEo?pid=ImgDet&rs=1");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.IntroContainer {
+    height: 100%;
+    width: 50%;
+    background-color: #F1E2D7;
+}
+
+.Intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto 0px;
+    /* border: 1px solid red; */
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    flex-direction: column;
+}
+
+.Intro>* {
+    margin: 25px;
+}
+
+.Greet {
+    font-family: SBold;
+    color: #707070;
+    font-size: 16px;
+    background-color: white;
+
+}
+
+.Location {
+    font-family: SemiBold;
+    color: #707070;
+}
+
+.Scope {
+    font-family: Regular;
+    color: #707070;
+    letter-spacing: .5px;
+    word-spacing: 1px;
+}
+
+
+
+/* Projects Start */
+.Projects_Container {
+    margin: 70px 0px;
+
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Projects_Container>* {
+    margin: 15px 0px;
+}
+
+.Projects {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #F1E2D7;
+    overflow: hidden;
+}
+
+.Projects_Container h1 {
+
+    font-family: SBold;
+}
+
+.Project {
+    width: 18%;
+    min-width: 250px;
+    min-height: 400px;
+    padding: 8px;
+    background-color: #ebc3a7;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+.Project:hover {
+    transform: scale(1.02);
+    transition: all 0.4s ease-out;
+}
+
+.Project img {
+    width: 100%;
+}
+
+.Project a {
+    text-align: center;
+    display: inline-block;
+    margin: 10px 0px;
+    /* width: 30%; */
+    font-size: 15px;
+    font-family: SemiBold;
+    padding: 5px;
+    text-decoration: none;
+    background-color: #E28A67;
+    color: black;
+    cursor: pointer;
+}
+
+.Project a:hover {
+    transition: all 0.3s;
+    color: white;
+    background-color: #707070;
+}
+
+/* Projects End */
+
+.Skill__Outer_container {
+    width: 100%;
+    min-height: 400px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Skill__Outer_container>* {
+    margin: 15px 0px;
+}
+
+.Skill__Outer_container h1 {
+    font-family: SBold;
+
+}
+
+.Skill_Types_Container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f1e2d7d0;
+}
+
+.Skill_Types_Container hr {
+    height: 1.5px;
+    width: 95%;
+    background-color: #923e02;
+
+}
+
+.Skill_Types_Container_Child {
+    padding: 30px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.Skill_Types_Container_Child h2 {
+    font-family: SBold;
+}
+
+.Skills_Container {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
+.Skills {
+
+    margin: 50px 0px 0px 0px;
+}
+
+.Skills li {
+    font-size: 20px;
+    font-family: SemiBold;
+}
+
+@media (max-width:1000px) {
+   
+  
+    .Intro>* {
+        margin: 25px;
+    }
+    
+    .Intro h3{
+        overflow-wrap: break-word;
+        font-size: 18px;
+    }
+    .NavBtns li {
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width:600px) {
+    .Home{
+        flex-direction: column;
+        /* height: auto; */
+    }
+    .Home>*{
+        width: 100%;
+        height: 50vh;
+    }
+}
+@media (max-width:400px) {
+    .NavBtns li {
+        margin: 0px 10px;
+    }
+    .Home{
+        flex-direction: column;
+        height: auto;
+    }
+    .Intro h3{
+        overflow-wrap: break-word;
+        font-size: 15px;
+    }
+    .Intro>*{
+        margin: 15px;
+    }
+    .Home>*{
+        width: 100%;
+        height: 50vh;
+    }
+}
+@media (max-width:600px) {
+    .Home{
+        flex-direction: column;
+        /* height: auto; */
+    }
+    .Home>*{
+        width: 100%;
+        height: 50vh;
+    }
+}
+@media (max-width:275px) {
+ 
+    .NavBtns{
+        justify-content: space-around;
+    }
+    .NavBtns li a{
+        font-size: 15px;
+    }
+    .NavBtns li {
+        margin: 0px 5px;
+    }
+
+}
+@media (max-width:200px) {
+    .My_Image{
+        height: 40vh;
+    }
+    .Home{
+        height: auto;
+    }
+    .NavBtns{
+        flex-direction: column;
+    }
+    .Intro{
+        height:min-content;
+    }
+    .Intro>*{
+       word-spacing: 0px;
+       word-break: break-all;
+    }
+    /* .IntroContainer{
+        height: max-content;
+    } */
+   
+}
